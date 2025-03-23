@@ -2,7 +2,7 @@ package com.gildedrose.catalog;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertInstanceOf;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class UpdateQualityServiceTest {
 
@@ -15,7 +15,7 @@ class UpdateQualityServiceTest {
         ItemDepreciation supplier = service.chooseItemType("foo");
 
         //then
-        assertInstanceOf(StandardItem.class, supplier);
+        assertTrue(supplier instanceof StandardItem);
     }
 
     @Test
@@ -27,6 +27,6 @@ class UpdateQualityServiceTest {
         ItemDepreciation supplier = service.chooseItemType("Aged Brie");
 
         //then
-        assertInstanceOf(AgedBrieItem.class, supplier);
+        assertTrue(supplier instanceof AgedBrieItem);
     }
 }
