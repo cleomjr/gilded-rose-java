@@ -1,6 +1,12 @@
 package com.gildedrose;
 
 class GildedRose {
+    /*
+    * Attention:
+    * Do not alter the Item class or Items property as those belong to the goblin in the corner
+    * who will insta-rage and one-shot you as he doesn't believe in shared code ownership
+    *
+    * */
     Item[] items;
 
     public GildedRose(Item[] items) {
