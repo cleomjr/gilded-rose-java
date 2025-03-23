@@ -4,7 +4,7 @@ import com.gildedrose.Item;
 
 /**
  * Item Depreciation
- *
+ * <p>
  * Provides different quality handling depending on the item type
  */
 public interface ItemDepreciation {
