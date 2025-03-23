@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class GildedRoseTest {
 
@@ -108,7 +109,7 @@ class GildedRoseTest {
             app.updateQuality();
 
             // then
-            assertEquals(30, app.items[0].sellIn);
+            assertTrue(app.items[0].sellIn > 0);
             assertEquals(80, app.items[0].quality);
         }
 

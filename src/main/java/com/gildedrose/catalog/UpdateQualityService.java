@@ -10,6 +10,9 @@ public class UpdateQualityService {
     static {
         final Map<String, Supplier<ItemDepreciation>> itemTypes = new HashMap<>();
         itemTypes.put("Aged Brie", AgedBrieItem::new);
+        itemTypes.put("Backstage passes to a TAFKAL80ETC concert", BackstagePassItem::new);
+        itemTypes.put("Conjured Mana Cake", ConjuredItem::new);
+        itemTypes.put("Sulfuras, Hand of Ragnaros", LegendaryItem::new);
         ITEM_TYPES = Collections.unmodifiableMap(itemTypes);
     }
 
